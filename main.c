@@ -1,20 +1,17 @@
 #include <stdio.h>
 int main() {
     float voto, somma;
-    int conteggio;
+    int nvoti;
     somma = 0;
-    conteggio = 0;
+    nvoti = 0;
     printf("Inserisci i voti (inserisci 0 per terminare):\n");
-    while (1) {
+    while (voto > 0) {
         scanf("%f", &voto);
-        if (voto == 0) {
-            break;
-        }
         somma += voto;
-        conteggio++;
+        nvoti++;
     }
     if (conteggio > 0) {
-        float media = somma / conteggio;
+        float media = somma / nvoti;
         printf("La media dei voti e': %f\n", media);
     }else{
         printf("Nessun voto inserito.\n");
