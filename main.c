@@ -13,7 +13,5 @@ int main() {
     if (conteggio > 0) {
         float media = somma / nvoti;
         printf("La media dei voti e': %f\n", media);
-    }else{
-        printf("Nessun voto inserito.\n");
     }
 }
